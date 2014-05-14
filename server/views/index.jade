@@ -1,6 +1,18 @@
 extends ../includes/layout
 
 block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') Mean Stack Site
+                    h6 - Extreme Tech Training
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href="/") Home
     section.content
         div(ng-view)
-    h2= mongoMessage
+    h2
+
+    footer.container.text-center
+        p &copy; 2014 Dan Hamilton
