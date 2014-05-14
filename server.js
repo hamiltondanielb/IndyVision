@@ -24,7 +24,12 @@ app.configure(function(){
     app.use(express.static(__dirname+'/public'));
 });
 
-mongoose.connect('mongodb://localhost/meanstacksite');
+if(env === 'development') {
+    mongoose.connect('mongodb://localhost/meanstacksite');
+}else {
+    mongoose.connect('mongodb://danhamilton:st4rw4rs@ds049198.mongolab.com:49198/meanstacksite');
+}
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console,'connection error...'));
 db.once('open',function callback(){
@@ -47,7 +52,7 @@ app.get('*', function(req,res){
     });
 });
 
-var port = 3030;
+var port = process.env.PORT || 3030;
 app.listen(port);
 
 console.log("Listening on port "+port +"...");
