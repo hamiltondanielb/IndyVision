@@ -1,30 +1,23 @@
 {
-  "name": "MeanStackSite",
+  "name": "MultiVision",
   "version": "0.0.0",
-  "description": "Learning Mean Stack",
+  "description": "Extreme Tech Training",
   "main": "index.js",
-  "dependencies": {
-    "express": "^3.4.4",
-    "jade": "^1.3.1",
-    "mongoose": "^3.8.9",
-    "stylus": "^0.45.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "0.10.x",
-    "npm": "1.4.x"
+    "npm": "1.3.x"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://hamiltondanielb@github.com/hamiltondanielb/MeanStackSite.git"
-  },
-  "author": "Dan Hamilton",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hamiltondanielb/MeanStackSite/issues"
-  },
-  "homepage": "https://github.com/hamiltondanielb/MeanStackSite"
+  "author": "Joe Eames",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "jade": "~0.35.0",
+    "express": "~3.4.4",
+    "stylus": "~0.40.2",
+    "mongoose": "~3.8.0",
+    "passport-local": "~0.1.6",
+    "passport": "~0.1.17"
+  }
 }
