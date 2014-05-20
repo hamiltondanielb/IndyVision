@@ -1,5 +1,5 @@
 {
-  "name": "MultiVision",
+  "name": "meanstacksite",
   "version": "0.0.0",
   "description": "Extreme Tech Training",
   "main": "index.js",
@@ -21,6 +21,11 @@
     "passport": "~0.1.17"
   },
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "karma": "^0.12.16",
+    "karma-chai-plugins": "^0.2.1",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.3",
+    "mocha": "^1.19.0"
   }
 }
