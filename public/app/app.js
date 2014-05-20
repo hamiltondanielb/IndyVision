@@ -4,7 +4,7 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
   var routeRoleChecks = {
     admin: {auth: function(mvAuth) {
       return mvAuth.authorizeCurrentUserForRoute('admin')
-    }}
+    }} //can add user property the same way to allow for checks and routes based on user role
   }
 
   $locationProvider.html5Mode(true);
