@@ -7,8 +7,10 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
     }},
     user: {auth: function(mvAuth) {
           return mvAuth.authorizeAuthenticatedUserForRoute()
+    }},
+    teacher: {auth: function(mvAuth) {
+        return mvAuth.authorizeCurrentUserForRoute('teacher')
     }}
-     //TODO:  add teacher property the same way to allow for checks and routes based on teacher role
   }
 
   $locationProvider.html5Mode(true);
@@ -23,8 +25,8 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
     .when('/profile', { templateUrl: '/partials/account/profile',
         controller: 'mvProfileCtrl', resolve: routeRoleChecks.user
     })
-    .when('/courses', { templateUrl: '/partials/courses/course-list',
-       controller: 'mvCourseListCtrl'
+    .when('/events', { templateUrl: '/partials/events/event-list',
+       controller: 'mvEventListCtrl'
     })
 
 });

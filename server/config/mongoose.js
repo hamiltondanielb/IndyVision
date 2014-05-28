@@ -1,17 +1,17 @@
 var mongoose = require('mongoose'),
     userModel = require('../models/user'),
-    courseModel = require('../models/Course');
+    eventModel = require('../models/Event');
 
 module.exports = function(config) {
   mongoose.connect(config.db);
   var db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error...'));
   db.once('open', function callback() {
-    console.log('multivision db opened');
+    console.log('indyvision db opened');
   });
 
     userModel.createDefaultUsers();
-    courseModel.createDefaultCourses();
+    eventModel.createDefaultEvents();
 
 };
 

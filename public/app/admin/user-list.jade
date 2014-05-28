@@ -1,4 +1,8 @@
 .container
   table.table
+    thead
+        td Name
+        td UserName
     tr(ng-repeat="user in users")
       td {{user.firstName + ' ' + user.lastName}}
+      td {{user.username}}

@@ -1,0 +1,5 @@
+.panel.panel-primary
+  .panel-heading.text-center Featured Events
+  .panel-body
+    .row(ng-repeat="event in events | filter:{featured:true}")
+      .col-md-12 {{event.title}}

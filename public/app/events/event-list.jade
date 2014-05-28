@@ -11,6 +11,6 @@
                 th Title
                 th Publish Date
             tbody
-                tr(ng-repeat="course in courses | filter:searchText | orderBy:sortOrder")
-                    td {{course.title}}
-                    td {{course.published | date}}
+                tr(ng-repeat="event in events | filter:searchText | orderBy:sortOrder")
+                    td {{event.title}}
+                    td {{event.published | date}}

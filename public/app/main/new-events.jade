@@ -1,0 +1,6 @@
+.panel.panel-primary
+  .panel-heading.text-center New Events
+  .panel-body
+    .row(ng-repeat="event in events | orderBy:'published':true | limitTo:10")
+      .col-md-3 {{event.published | date:'MMM d'}}
+      .col-md-9 {{event.title}}
