@@ -9,7 +9,7 @@ module.exports = {
   },
   production: {
     rootPath: rootPath,
-    db: 'mongodb://danham:st4rw4rs@ds047448.mongolab.com:47448/indyvision',
+    db: 'mongodb://danham:st4rw4rs@ds033699.mongolab.com:33699/indyvision',
     port: process.env.PORT || 80
   }
 }
