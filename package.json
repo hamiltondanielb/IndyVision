@@ -13,12 +13,13 @@
   "author": "Dan Hamilton",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "jade": "~0.35.0",
     "express": "~3.4.4",
-    "stylus": "~0.40.2",
+    "jade": "~0.35.0",
+    "less-middleware": "^1.0.3",
     "mongoose": "~3.8.0",
+    "passport": "~0.1.17",
     "passport-local": "~0.1.6",
-    "passport": "~0.1.17"
+    "stylus": "~0.40.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

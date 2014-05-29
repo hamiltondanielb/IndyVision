@@ -1,5 +1,6 @@
 var express = require('express'),
   stylus = require('stylus'),
+  lessMiddleware = require('less-middleware'),
   passport = require('passport');
 
 module.exports = function(app, config) {
@@ -10,6 +11,9 @@ module.exports = function(app, config) {
   app.configure(function() {
     app.set('views', config.rootPath + '/server/views');
     app.set('view engine', 'jade');
+    app.use(
+        lessMiddleware(config.rootPath + '/public')
+    );
     app.use(express.logger('dev'));
     app.use(express.cookieParser());
     app.use(express.bodyParser());
