@@ -1,45 +1,13 @@
-.container
-  #myCarousel.carousel.slide(data-ride="carousel")
-    ol.carousel-indicators
-      li.active(data-target='#myCarousel', data-slide-to='0')
-      li(data-target='#myCarousel', data-slide-to='1')
-      li(data-target='#myCarousel', data-slide-to='2')
-    .carousel-inner
-        .item.active
-            //img(src='data:image/png;base64,', data-src='#{pathToAssets}/assets/js/holder.js/100%x500/auto/#777:#7a7a7a/text:First slide', alt='First slide')
-            .container
-                .carousel-caption
-                    h1 IndyVision
-                    p
-                        | Welcome to IndyVision! The most comprehensive and complete collection of things to do in Indianapolis.
-                    p
-                        a.btn.btn-large.btn-primary(href='/signup') Sign up today
-        .item
-            //img(src='data:image/png;base64,', data-src='#{pathToAssets}/assets/js/holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide', alt='Second slide')
-            .container
-                .carousel-caption
-                    h1 Another example headline.
-                    p
-                        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    p
-                        a.btn.btn-large.btn-primary(href='#') Learn more
-        .item
-            //img(src='data:image/png;base64,', data-src='#{pathToAssets}/assets/js/holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide', alt='Third slide')
-            .container
-                .carousel-caption
-                    h1 One more for good measure.
-                    p
-                        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    p
-                        a.btn.btn-large.btn-primary(href='#') Browse gallery
-    a.left.carousel-control(data-target='#myCarousel', data-slide='prev')
-        span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(data-target='#myCarousel', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right
-
+.container(data-ng-init="getLocations()")
   .row
     .col-lg-12
-        google-map(center="map.center", zoom="map.zoom", draggable="true")
+        google-map( center="map.center", zoom="map.zoom", draggable ="true", bounds="map.bounds")
+            markers
+                marker(ng-repeat="ticket in map.tickets", coords="ticket.marker" options="ticket.options")
+                marker(ng-repeat="accident in map.accidents", coords="accident.marker" options="accident.options")
+        //input(type="text" ng-model="numberOfHoles") {{$scope.mapInstance.bounds.northeast.latitude}}
+        //button(ng-click="getLocations()") Get Tickets
+
   .row
     .col-md-6
       div(ng-include="'/partials/main/featured-events'")
