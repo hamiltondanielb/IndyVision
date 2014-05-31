@@ -1,7 +1,7 @@
 .panel.panel-primary
   .panel-heading.text-center Featured Accidents
   .panel-body
-    .row(ng-repeat="accident in map.accidents | filter:{surfacetypecde_conddescr:'Dry'}")
+    .row(ng-repeat="accident in map.accidents | filter:{surfacetypecde_conddescr:'Dry'} | limitTo:5")
         .col-md-3 {{accident.colldte | date:'MMM d'}}
         .col-md-6 {{accident.statute_description}}
         .col-md-3 {{accident.surfacetypecde_conddescr}}

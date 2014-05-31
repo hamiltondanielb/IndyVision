@@ -1,6 +1,8 @@
 angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$http) {
     $scope.map = {
-        showTraffic: true,
+        layers: {
+            showTraffic: true
+        },
         bounds: {
             northeast:{
                 latitude: 41.7684,
@@ -21,6 +23,27 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
         accidents: [
         ]
     };
+
+    $scope.Circle = {
+        visible: true,
+        editable: true,
+        draggable: true,
+        geodesic: true,
+        stroke:{
+            weight: 2,
+            color:"#08B21F",
+            opacity: 1
+        },
+        fill:{
+            color:"#08B21F",
+            opacity: 0.5
+        },
+        center:{
+            latitude: 39.7684,
+            longitude: -86.158
+        },
+        radius: 5199.95859
+        };
 
     $scope.getLocations = function()
     {
