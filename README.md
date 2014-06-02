@@ -1,4 +1,4 @@
-MeanStackSite
+IndyVision Web Site
 =============
 
-Learning Mean Stack
+MEAN stack site for Indy Civic Hackathon. Projec to display open traffic and accident data.
