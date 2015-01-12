@@ -1,12 +1,11 @@
 IndyVision Web Site
 =============
 
-Angular JS site for Indy Civic Hackathon. Functionality is mostly provided via Angular JS, but application is hosted using a node.js server. Project to display open traffic and accident data. This project was developed by Dan Hamilton during an 8-hour hack-a-thon. It utilizes the Socrata API to gather data provided by INDOT.
+Police Monitor site for Indy Civic Hackathon. Project to display open traffic and accident data. This project was developed by [Dan Hamilton](http://danielbradleyhamilton.com) during an 8-hour hack-a-thon. It utilizes the Socrata API to gather data provided by INDOT. 
 
-[Live Preview: ](http://indyvision.herokuapp.com/)
+*Disclaimer: Data has not been update in INDOTs Socrata Database since May 2014*
 
-#### Updates
-With small updates after
+[Live Preview](http://indyvision.herokuapp.com/)
 
 ### Problem Statement
 
@@ -25,3 +24,6 @@ Data sets to be utilized:
 Heatmap with various views and filters
 MASHUP with weather data and other external data sets
 Search app for the various data sets where users can make their own visualizations
+
+### Technology Choices
+Functionality is mostly provided via Angular JS, but application is hosted using a node.js server. The reason for these technology choices is a need for a simple server, and my knowledge of AngularJS at the time for front-end technology since an 8-hour window was given.
