@@ -3,6 +3,8 @@ IndyVision Web Site
 
 Angular JS site for Indy Civic Hackathon. Project to display open traffic and accident data. This project was developed by Dan Hamilton during an 8-hour hack-a-thon. It utilizes the Socrata API to gather data provided by INDOT.
 
+[Live Preview: ](http://indyvision.herokuapp.com/)
+
 #### Updates
 With small updates after
 
