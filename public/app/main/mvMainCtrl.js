@@ -16,7 +16,7 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
         center: {
             latitude: 39.7684,
             longitude: -86.158
-        },
+        },c
         zoom:12,
         tickets: [
         ],
@@ -49,7 +49,7 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
     {
         $http({method: 'GET', url: 'http://communities.socrata.com/resource/geug-a2k2.json?$limit=100&$where=within_circle(location_1,39.7684,-86.158,12100)&$order=offense_date%20desc'}).success(function(data)
         {
-            console.log(data);
+            //console.log(data);
             for (var i = 0; i < data.length; i++) {
                 var newTickets =
                 {
@@ -86,12 +86,12 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
 
                 $scope.map['tickets'].push(newTickets);
             }
-            console.log($scope.map);
+            //console.log($scope.map);
         });
 
         $http({method: 'GET', url: 'http://communities.socrata.com/resource/3iyy-dr5n.json?countydescr=marion&$limit=25&$order=colldte%20desc'}).success(function(data)
         {
-            console.log(data);
+            //console.log(data);
             for (var i = 0; i < data.length; i++) {
                 var newAccident =
                 {
@@ -115,7 +115,7 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
 
                 $scope.map['accidents'].push(newAccident);
             }
-            console.log($scope.map);
+            //console.log($scope.map);
         });
     }
 });
