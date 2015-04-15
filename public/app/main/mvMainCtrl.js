@@ -118,7 +118,4 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
             console.log($scope.map);
         });
     }
-
-
-    //$scope.events = mvCachedEvents.query();
 });
