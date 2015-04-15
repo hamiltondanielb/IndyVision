@@ -71,8 +71,8 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
                         icon: {
                             url: "../../img/Popo_tiny.png",
                             scaledSize:{
-                                height:"20",
-                                width:"25"
+                                height:20,
+                                width:25
                             }
                         }
                     },
