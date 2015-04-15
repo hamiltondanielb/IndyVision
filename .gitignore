@@ -1,2 +1,4 @@
 .ideas
 node_modules
+tmp/
+dist/

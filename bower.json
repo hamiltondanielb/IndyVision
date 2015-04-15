@@ -1,21 +1,19 @@
 {
-  "name": "meanstacksite",
-  "version": "0.0.0",
-  "authors": [
-    "Dan Hamilton <hamilton.danielb@gmail.com>"
-  ],
-  "description": "\"Extreme Tech Training\"",
-  "license": "MIT",
-  "private": true,
+  "name": "indy-vision",
   "dependencies": {
-    "jquery": "~2.0.3",
-    "toastr": "~2.0.1",
-    "angular": "~1.2.0",
-    "angular-resource": "~1.2.0",
-    "angular-route": "~1.2.0",
-    "bootstrap": "~3.0.2",
-    "angular-mocks": "1.2.0",
-    "angular-google-maps": "~1.1.0",
-    "underscore": "~1.6.0"
+    "handlebars": "2.0.0",
+    "jquery": "^1.11.1",
+    "ember": "1.9.1",
+    "ember-data": "1.0.0-beta.16",
+    "ember-resolver": "~0.1.10",
+    "loader.js": "stefanpenner/loader.js#1.0.1",
+    "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.3",
+    "ember-cli-test-loader": "rwjblue/ember-cli-test-loader#0.0.4",
+    "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
+    "ember-qunit": "0.1.8",
+    "ember-qunit-notifications": "0.0.4",
+    "qunit": "~1.15.0",
+    "bootstrap": "~3.3",
+    "ember-addons.bs_for_ember": "~0.7.0"
   }
 }

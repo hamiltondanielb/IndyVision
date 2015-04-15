@@ -1,7 +1,0 @@
-.panel.panel-primary
-  .panel-heading.text-center New Tickets
-  .panel-body
-    .row(ng-repeat="ticket in map.tickets | orderBy:'offense_date'| limitTo:10")
-      .col-md-3 {{ticket.offense_date | date:'MMM d - HH:mm'}}
-      .col-md-6 {{ticket.statute_description}}
-      .col-md-3 {{ticket.location}}
