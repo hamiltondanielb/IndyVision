@@ -16,7 +16,7 @@ angular.module('app').controller('mvMainCtrl', function($scope,mvCachedEvents,$h
         center: {
             latitude: 39.7684,
             longitude: -86.158
-        },c
+        },
         zoom:12,
         tickets: [
         ],
